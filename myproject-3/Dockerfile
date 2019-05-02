@@ -2,8 +2,7 @@ FROM ubuntu:18.04
 
 # Install system dependencies
 RUN apt-get clean && apt-get update
-RUN apt-get install -y nodejs
-RUN apt-get install -y npm
+RUN app-get install -y nodejs
 
 # Create app directory
 WORKDIR /usr/src/app
